@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #icon-containerd {
+            position: absolute;
+        }
+    </style>
+    <title>Thank you</title>
+</head>
+<body>
+    <div id="icon-container"></div>
+    <div id="bg-icon"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('icon-container'), // required
+        path: 'https://assets7.lottiefiles.com/packages/lf20_qn2snk.json', // required
+        renderer: 'svg', // required
+        loop: false, // optional
+        autoplay: true, // optional
+        name: "Thank you", // optional
+        });
+    </script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('icon-container'), // required
+            path: 'https://assets4.lottiefiles.com/packages/lf20_ly71jI.json', // required
+            renderer: 'svg', // required
+            loop: true, // optional
+            autoplay: true, // optional
+            name: "Thank you", // optional
+        });
+    </script>
+    
+</body>
+</html>
