@@ -4,15 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        #icon-containerd {
-            position: absolute;
+         body {
+            background-color : #001126;
         }
+        #icon-container {
+            width: 300px;
+            height: 300px;            
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+.pyro > .before, .pyro > .after {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow:0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+  -moz-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -webkit-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -o-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  -ms-animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+.pyro > .after {
+  -moz-animation-delay: 1.25s, 1.25s, 1.25s;
+  -webkit-animation-delay: 1.25s, 1.25s, 1.25s;
+  -o-animation-delay: 1.25s, 1.25s, 1.25s;
+  -ms-animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  -moz-animation-duration: 1.25s, 1.25s, 6.25s;
+  -webkit-animation-duration: 1.25s, 1.25s, 6.25s;
+  -o-animation-duration: 1.25s, 1.25s, 6.25s;
+  -ms-animation-duration: 1.25s, 1.25s, 6.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+@-webkit-keyframes bang {
+  to {
+    box-shadow: -24px 19.3333333333px #ff2b00, -78px -149.6666666667px #f0a, 243px -89.6666666667px #af0, -46px -31.6666666667px #ff5900, 148px -141.6666666667px #40f, 119px -198.6666666667px #ff000d, -79px -118.6666666667px #fe0, 215px 10.3333333333px #b300ff, 1px 16.3333333333px #00ffd9, 57px 14.3333333333px #7300ff, -192px -160.6666666667px #0af, 105px -169.6666666667px #b700ff, 60px -296.6666666667px #ff9100, -181px -319.6666666667px #00ff2f, -203px -410.6666666667px #26ff00, -48px -89.6666666667px #b300ff, 91px 63.3333333333px #a0f, 137px -339.6666666667px #0f2, 36px -349.6666666667px #008cff, -71px -206.6666666667px #00ffbf, -148px -224.6666666667px #ffb700, 185px -264.6666666667px #00a2ff, -191px -165.6666666667px #4f0, 5px -370.6666666667px #009dff, 47px -342.6666666667px #d0f, 67px -165.6666666667px #00e6ff, -98px 19.3333333333px #5eff00, -20px -95.6666666667px #fb00ff, -248px -20.6666666667px #f01, -68px 9.3333333333px #2f0, -224px -121.6666666667px #4f0, -109px -118.6666666667px #00ff04, -63px -47.6666666667px #0dff00, -188px -101.6666666667px #7f0, 42px -26.6666666667px #00ff1e, -191px 68.3333333333px #ffc800, 46px -142.6666666667px #af0, 53px -373.6666666667px #ff3c00, -147px -251.6666666667px #ff0d00, 166px -199.6666666667px #ffea00, -216px 5.3333333333px #ff000d, -189px 79.3333333333px #6fff00, -85px -81.6666666667px #00ffc8, -233px -258.6666666667px #00a2ff, -131px -22.6666666667px #b700ff, 240px -354.6666666667px #f700ff, -87px -52.6666666667px #00a2ff, 51px -62.6666666667px #ff0073, 67px 69.3333333333px #bfff00, 172px -9.6666666667px lime, -162px -406.6666666667px #ff00fb;
+  }
+}
+@-moz-keyframes bang {
+  to {
+    box-shadow: -24px 19.3333333333px #ff2b00, -78px -149.6666666667px #f0a, 243px -89.6666666667px #af0, -46px -31.6666666667px #ff5900, 148px -141.6666666667px #40f, 119px -198.6666666667px #ff000d, -79px -118.6666666667px #fe0, 215px 10.3333333333px #b300ff, 1px 16.3333333333px #00ffd9, 57px 14.3333333333px #7300ff, -192px -160.6666666667px #0af, 105px -169.6666666667px #b700ff, 60px -296.6666666667px #ff9100, -181px -319.6666666667px #00ff2f, -203px -410.6666666667px #26ff00, -48px -89.6666666667px #b300ff, 91px 63.3333333333px #a0f, 137px -339.6666666667px #0f2, 36px -349.6666666667px #008cff, -71px -206.6666666667px #00ffbf, -148px -224.6666666667px #ffb700, 185px -264.6666666667px #00a2ff, -191px -165.6666666667px #4f0, 5px -370.6666666667px #009dff, 47px -342.6666666667px #d0f, 67px -165.6666666667px #00e6ff, -98px 19.3333333333px #5eff00, -20px -95.6666666667px #fb00ff, -248px -20.6666666667px #f01, -68px 9.3333333333px #2f0, -224px -121.6666666667px #4f0, -109px -118.6666666667px #00ff04, -63px -47.6666666667px #0dff00, -188px -101.6666666667px #7f0, 42px -26.6666666667px #00ff1e, -191px 68.3333333333px #ffc800, 46px -142.6666666667px #af0, 53px -373.6666666667px #ff3c00, -147px -251.6666666667px #ff0d00, 166px -199.6666666667px #ffea00, -216px 5.3333333333px #ff000d, -189px 79.3333333333px #6fff00, -85px -81.6666666667px #00ffc8, -233px -258.6666666667px #00a2ff, -131px -22.6666666667px #b700ff, 240px -354.6666666667px #f700ff, -87px -52.6666666667px #00a2ff, 51px -62.6666666667px #ff0073, 67px 69.3333333333px #bfff00, 172px -9.6666666667px lime, -162px -406.6666666667px #ff00fb;
+  }
+}
+@-o-keyframes bang {
+  to {
+    box-shadow: -24px 19.3333333333px #ff2b00, -78px -149.6666666667px #f0a, 243px -89.6666666667px #af0, -46px -31.6666666667px #ff5900, 148px -141.6666666667px #40f, 119px -198.6666666667px #ff000d, -79px -118.6666666667px #fe0, 215px 10.3333333333px #b300ff, 1px 16.3333333333px #00ffd9, 57px 14.3333333333px #7300ff, -192px -160.6666666667px #0af, 105px -169.6666666667px #b700ff, 60px -296.6666666667px #ff9100, -181px -319.6666666667px #00ff2f, -203px -410.6666666667px #26ff00, -48px -89.6666666667px #b300ff, 91px 63.3333333333px #a0f, 137px -339.6666666667px #0f2, 36px -349.6666666667px #008cff, -71px -206.6666666667px #00ffbf, -148px -224.6666666667px #ffb700, 185px -264.6666666667px #00a2ff, -191px -165.6666666667px #4f0, 5px -370.6666666667px #009dff, 47px -342.6666666667px #d0f, 67px -165.6666666667px #00e6ff, -98px 19.3333333333px #5eff00, -20px -95.6666666667px #fb00ff, -248px -20.6666666667px #f01, -68px 9.3333333333px #2f0, -224px -121.6666666667px #4f0, -109px -118.6666666667px #00ff04, -63px -47.6666666667px #0dff00, -188px -101.6666666667px #7f0, 42px -26.6666666667px #00ff1e, -191px 68.3333333333px #ffc800, 46px -142.6666666667px #af0, 53px -373.6666666667px #ff3c00, -147px -251.6666666667px #ff0d00, 166px -199.6666666667px #ffea00, -216px 5.3333333333px #ff000d, -189px 79.3333333333px #6fff00, -85px -81.6666666667px #00ffc8, -233px -258.6666666667px #00a2ff, -131px -22.6666666667px #b700ff, 240px -354.6666666667px #f700ff, -87px -52.6666666667px #00a2ff, 51px -62.6666666667px #ff0073, 67px 69.3333333333px #bfff00, 172px -9.6666666667px lime, -162px -406.6666666667px #ff00fb;
+  }
+}
+@-ms-keyframes bang {
+  to {
+    box-shadow: -24px 19.3333333333px #ff2b00, -78px -149.6666666667px #f0a, 243px -89.6666666667px #af0, -46px -31.6666666667px #ff5900, 148px -141.6666666667px #40f, 119px -198.6666666667px #ff000d, -79px -118.6666666667px #fe0, 215px 10.3333333333px #b300ff, 1px 16.3333333333px #00ffd9, 57px 14.3333333333px #7300ff, -192px -160.6666666667px #0af, 105px -169.6666666667px #b700ff, 60px -296.6666666667px #ff9100, -181px -319.6666666667px #00ff2f, -203px -410.6666666667px #26ff00, -48px -89.6666666667px #b300ff, 91px 63.3333333333px #a0f, 137px -339.6666666667px #0f2, 36px -349.6666666667px #008cff, -71px -206.6666666667px #00ffbf, -148px -224.6666666667px #ffb700, 185px -264.6666666667px #00a2ff, -191px -165.6666666667px #4f0, 5px -370.6666666667px #009dff, 47px -342.6666666667px #d0f, 67px -165.6666666667px #00e6ff, -98px 19.3333333333px #5eff00, -20px -95.6666666667px #fb00ff, -248px -20.6666666667px #f01, -68px 9.3333333333px #2f0, -224px -121.6666666667px #4f0, -109px -118.6666666667px #00ff04, -63px -47.6666666667px #0dff00, -188px -101.6666666667px #7f0, 42px -26.6666666667px #00ff1e, -191px 68.3333333333px #ffc800, 46px -142.6666666667px #af0, 53px -373.6666666667px #ff3c00, -147px -251.6666666667px #ff0d00, 166px -199.6666666667px #ffea00, -216px 5.3333333333px #ff000d, -189px 79.3333333333px #6fff00, -85px -81.6666666667px #00ffc8, -233px -258.6666666667px #00a2ff, -131px -22.6666666667px #b700ff, 240px -354.6666666667px #f700ff, -87px -52.6666666667px #00a2ff, 51px -62.6666666667px #ff0073, 67px 69.3333333333px #bfff00, 172px -9.6666666667px lime, -162px -406.6666666667px #ff00fb;
+  }
+}
+@keyframes bang {
+  to {
+    box-shadow: -24px 19.3333333333px #ff2b00, -78px -149.6666666667px #f0a, 243px -89.6666666667px #af0, -46px -31.6666666667px #ff5900, 148px -141.6666666667px #40f, 119px -198.6666666667px #ff000d, -79px -118.6666666667px #fe0, 215px 10.3333333333px #b300ff, 1px 16.3333333333px #00ffd9, 57px 14.3333333333px #7300ff, -192px -160.6666666667px #0af, 105px -169.6666666667px #b700ff, 60px -296.6666666667px #ff9100, -181px -319.6666666667px #00ff2f, -203px -410.6666666667px #26ff00, -48px -89.6666666667px #b300ff, 91px 63.3333333333px #a0f, 137px -339.6666666667px #0f2, 36px -349.6666666667px #008cff, -71px -206.6666666667px #00ffbf, -148px -224.6666666667px #ffb700, 185px -264.6666666667px #00a2ff, -191px -165.6666666667px #4f0, 5px -370.6666666667px #009dff, 47px -342.6666666667px #d0f, 67px -165.6666666667px #00e6ff, -98px 19.3333333333px #5eff00, -20px -95.6666666667px #fb00ff, -248px -20.6666666667px #f01, -68px 9.3333333333px #2f0, -224px -121.6666666667px #4f0, -109px -118.6666666667px #00ff04, -63px -47.6666666667px #0dff00, -188px -101.6666666667px #7f0, 42px -26.6666666667px #00ff1e, -191px 68.3333333333px #ffc800, 46px -142.6666666667px #af0, 53px -373.6666666667px #ff3c00, -147px -251.6666666667px #ff0d00, 166px -199.6666666667px #ffea00, -216px 5.3333333333px #ff000d, -189px 79.3333333333px #6fff00, -85px -81.6666666667px #00ffc8, -233px -258.6666666667px #00a2ff, -131px -22.6666666667px #b700ff, 240px -354.6666666667px #f700ff, -87px -52.6666666667px #00a2ff, 51px -62.6666666667px #ff0073, 67px 69.3333333333px #bfff00, 172px -9.6666666667px lime, -162px -406.6666666667px #ff00fb;
+  }
+}
+@-webkit-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-o-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-ms-keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-moz-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-o-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@-ms-keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}
+
     </style>
     <title>Thank you</title>
 </head>
 <body>
-    <div id="icon-container"></div>
-    <div id="bg-icon"></div>
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+        <div id="icon-container"></div>
+    </div>
+        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script>
         var animation = bodymovin.loadAnimation({
@@ -23,17 +254,6 @@
         autoplay: true, // optional
         name: "Thank you", // optional
         });
-    </script>
-    <script>
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('icon-container'), // required
-            path: 'https://assets4.lottiefiles.com/packages/lf20_ly71jI.json', // required
-            renderer: 'svg', // required
-            loop: true, // optional
-            autoplay: true, // optional
-            name: "Thank you", // optional
-        });
-    </script>
-    
+    </script>    
 </body>
 </html>
